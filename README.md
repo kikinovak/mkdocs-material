@@ -7,19 +7,19 @@ Installer MkDocs :
 ```console
 $ python3 -m venv ~/.venv/mkdocs
 $ source ~/.venv/mkdocs/bin/activate
-(mkdocs) $ pip install --upgrade pip
-(mkdocs) $ pip install mkdocs
+$ pip install --upgrade pip
+$ pip install mkdocs
 ```
 
 Tester MkDocs :
 
 ```console
-(mkdocs) $ mkdocs new test
+$ mkdocs new test
 INFO    -  Creating project directory: test
 INFO    -  Writing config file: test/mkdocs.yml
 INFO    -  Writing initial docs: test/docs/index.md
-(mkdocs) $ cd test/
-(mkdocs) $ tree
+$ cd test/
+$ tree
 .
 ├── docs
 │   └── index.md
@@ -31,7 +31,7 @@ INFO    -  Writing initial docs: test/docs/index.md
 Lancer le serveur de développement :
 
 ```console
-(mkdocs) $ mkdocs serve
+$ mkdocs serve
 INFO    -  Building documentation...
 INFO    -  Cleaning site directory
 INFO    -  Documentation built in 0.06 seconds
@@ -41,9 +41,9 @@ INFO    -  [20:11:32] Serving on http://127.0.0.1:8000/
 
 Ouvrir la page http://127.0.0.1:8000 dans un navigateur web.
 
-> Le serveur de développement gère le rafraîchissement automatique. Dès qu'il y
-> a le moindre changement dans le fichier de configuration `mkdocs.yml` ou dans
-> le répertoire `docs/` la documentation est mise à jour à chaud.
+Le serveur de développement gère le rafraîchissement automatique. Dès qu'il y a
+le moindre changement dans le fichier de configuration `mkdocs.yml` ou dans le
+répertoire `docs/` la documentation est mise à jour à chaud.
 
 
 ## Ressources
