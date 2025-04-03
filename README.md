@@ -119,6 +119,37 @@ nav:
 theme: readthedocs
 ```
 
+Exemple : `sites/site-04`
+
+
+## Construire le site
+
+Invoquer cette commande à la racine du projet :
+
+```console 
+$ mkdocs build
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: .../site-05/site
+INFO    -  Documentation built in 0.08 seconds
+```
+
+On se retrouve avec un nouveau répertoire `site/` :
+
+```console
+$ ls site/
+404.html  css  index.html  search       sitemap.xml
+about     img  js          search.html  sitemap.xml.gz
+```
+
+Si l'on stocke le projet dans un dépôt Git, il va falloir ajouter un fichier
+`.gitignore` correspondant :
+
+```console
+$ echo 'site/' >> .gitignore
+```
+
+Exemple : `sites/site-04`
+
 
 ## Ressources
 
