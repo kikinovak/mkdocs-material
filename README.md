@@ -74,7 +74,7 @@ $ mkdocs serve
 
 Éditer `mkdocs.yml` pour changer le titre du site :
 
-```console
+```yaml
 site_name: My Site
 ```
 
@@ -97,11 +97,26 @@ $ tree
 
 Éditer `mkdocs.yml` et renseigner les infos d'en-tête pour la navigation :
 
-```console
+```yaml
 site_name: My Site
 nav:
   - Home: index.md
   - About: about.md
+```
+
+Exemple : `sites/site-03`
+
+
+## Utiliser un thème
+
+Éditer `mkdocs.yml` et choisir un thème :
+
+```yaml
+site_name: My Site
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
 ```
 
 
