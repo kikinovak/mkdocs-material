@@ -50,14 +50,14 @@ répertoire `docs/` la documentation est mise à jour à chaud.
 Voici le site par défaut tel qu'il est généré par la commande `mkdocs new
 site-01`.
 
-```
+```console
 $ cd sites/site-01
 $ mkdocs serve
 ```
 
 Alternativement on peut également créer le répertoire d'abord.
 
-```
+```console
 $ mkdir site-01
 $ cd site-01/
 $ mkdocs new .
@@ -67,14 +67,14 @@ INFO    -  Writing initial docs: ./docs/index.md
 
 ## Le titre du site
 
-```
+```console
 $ cd sites/site-02
 $ mkdocs serve
 ```
 
 Éditer `mkdocs.yml` pour changer le titre du site :
 
-```
+```console
 site_name: My Site
 ```
 
