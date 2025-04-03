@@ -65,6 +65,19 @@ INFO    -  Writing config file: ./mkdocs.yml
 INFO    -  Writing initial docs: ./docs/index.md
 ```
 
+## Le titre du site
+
+```
+$ cd sites/site-02
+$ mkdocs serve
+```
+
+Éditer `mkdocs.yml` pour changer le titre du site :
+
+```
+site_name: My Site
+```
+
 
 ## Ressources
 
