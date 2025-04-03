@@ -45,6 +45,26 @@ Le serveur de développement gère le rafraîchissement automatique. Dès qu'il 
 le moindre changement dans le fichier de configuration `mkdocs.yml` ou dans le
 répertoire `docs/` la documentation est mise à jour à chaud.
 
+## Le site par défaut
+
+Voici le site par défaut tel qu'il est généré par la commande `mkdocs new
+site-01`.
+
+```
+$ cd sites/site-01
+$ mkdocs serve
+```
+
+Alternativement on peut également créer le répertoire d'abord.
+
+```
+$ mkdir site-01
+$ cd site-01/
+$ mkdocs new .
+INFO    -  Writing config file: ./mkdocs.yml
+INFO    -  Writing initial docs: ./docs/index.md
+```
+
 
 ## Ressources
 
