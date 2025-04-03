@@ -148,7 +148,7 @@ Si l'on stocke le projet dans un dépôt Git, il va falloir ajouter un fichier
 $ echo 'site/' >> .gitignore
 ```
 
-Exemple : `sites/site-04`
+Exemple : `sites/site-05`
 
 
 ## Ressources
