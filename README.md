@@ -48,14 +48,14 @@ répertoire `docs/` la documentation est mise à jour à chaud.
 ## Le site par défaut
 
 Voici le site par défaut tel qu'il est généré par la commande `mkdocs new
-site-01`.
+site-01` :
 
 ```console
 $ cd sites/site-01
 $ mkdocs serve
 ```
 
-Alternativement on peut également créer le répertoire d'abord.
+Alternativement on peut également créer le répertoire d'abord :
 
 ```console
 $ mkdir site-01
@@ -76,6 +76,32 @@ $ mkdocs serve
 
 ```console
 site_name: My Site
+```
+
+
+## Ajouter des pages
+
+Ajouter une page à la documentation :
+
+```console
+$ curl 'https://jaspervdj.be/lorem-markdownum/markdown.txt' > docs/about.md
+$ tree
+.
+├── docs
+│   ├── about.md
+│   └── index.md
+└── mkdocs.yml
+
+1 directory, 3 files
+```
+
+Éditer `mkdocs.yml` et renseigner les infos d'en-tête pour la navigation :
+
+```console
+site_name: My Site
+nav:
+  - Home: index.md
+  - About: about.md
 ```
 
 
